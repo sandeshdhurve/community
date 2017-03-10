@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
-  resources :shops
+  resources :shops do
+  #->Prelang (voting/acts_as_votable)
+  member do
+    get "vote"
+  end
+end
+
 
   resources :forums do
   #->Prelang (voting/acts_as_votable)
