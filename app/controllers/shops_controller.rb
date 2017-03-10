@@ -1,5 +1,5 @@
 class ShopsController < ApplicationController
-  before_action :set_shop, only: [:show, :edit, :update, :destroy]
+  before_action :set_shop, only: [:show, :edit, :update, :destroy, :vote]
 
   # GET /shops
   # GET /shops.json
