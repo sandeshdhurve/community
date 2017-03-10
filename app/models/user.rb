@@ -45,4 +45,5 @@ class User < ActiveRecord::Base
 
 
   devise authentication_keys: [:login]
+  validates_formatting_of :email_id, using: :email
 end
