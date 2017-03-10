@@ -47,4 +47,5 @@ class User < ActiveRecord::Base
   devise authentication_keys: [:login]
   validates_formatting_of :email_id, using: :email
   validates_formatting_of :phone_number, using: :us_phone
+  acts_as_votable 
 end
