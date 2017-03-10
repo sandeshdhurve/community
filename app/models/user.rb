@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
   #->Prelang (user_login/devise)
   belongs_to :forum
   belongs_to :club
+  has_many :forums
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     user = User.where(provider: auth.provider, uid: auth.uid).first
 
